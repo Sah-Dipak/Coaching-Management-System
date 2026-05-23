@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Login</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+<style>
+select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">🎓 Coaching Management System</div>
+
+<div class="card">
+
+<h2>Login</h2>
+
+<form method="POST" action="/login">
+
+<input type="text" name="username" placeholder="Enter Username" required><br>
+
+<input type="password" name="password" placeholder="Enter Password" required><br>
+
+<select name="role" required>
+    <option value="">-- Select Role --</option>
+    <option value="admin">Admin</option>
+    <option value="student">Student</option>
+</select><br>
+
+<button type="submit">Login</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

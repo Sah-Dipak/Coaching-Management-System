@@ -1,0 +1,67 @@
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body><html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="navbar">Login History</div>
+
+<h2>All Login Records</h2>
+
+<table>
+<tr>
+<th>ID</th>
+<th>Username</th>
+<th>Role</th>
+<th>Time</th>
+</tr>
+
+{% for l in logins %}
+<tr>
+<td>{{ l[0] }}</td>
+<td>{{ l[1] }}</td>
+<td>{{ l[2] }}</td>
+<td>{{ l[3] }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+<a href="/admin">Back</a>
+
+</body>
+</html>
+
+<div class="navbar">Login History</div>
+
+<h2>All Login Records</h2>
+
+<table>
+<tr>
+<th>ID</th>
+<th>Username</th>
+<th>Role</th>
+<th>Time</th>
+</tr>
+
+{% for l in logins %}
+<tr>
+<td>{{ l[0] }}</td>
+<td>{{ l[1] }}</td>
+<td>{{ l[2] }}</td>
+<td>{{ l[3] }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+<a href="/admin">Back</a>
+
+</body>
+</html>

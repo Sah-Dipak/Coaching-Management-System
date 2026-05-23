@@ -1,0 +1,25 @@
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="navbar">Add Student</div>
+
+<div class="card">
+
+<form method="POST">
+<input type="text" name="name" placeholder="Name"><br>
+<input type="text" name="course" placeholder="Course"><br>
+<input type="text" name="mobile" placeholder="Mobile"><br>
+
+<button type="submit">Add</button>
+</form>
+
+<a href="/dashboard">Back</a>
+
+</div>
+
+</body>
+</html>
